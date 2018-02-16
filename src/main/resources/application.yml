@@ -1,0 +1,19 @@
+server:
+   port: 8085
+   context-path: /mesero-api
+   
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/meserodb
+    username: postgres
+    password: 123456
+  mvc:
+    dispatch-options-request: true
+    
+   
